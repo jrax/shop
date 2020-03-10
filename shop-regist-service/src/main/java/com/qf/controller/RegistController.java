@@ -29,6 +29,7 @@ public class RegistController {
             resultVO.setData("");
             resultVO.setMsg("添加成功!!!");
         }else {
+
             resultVO.setCode(400);
             resultVO.setData("");
             resultVO.setMsg("添加失败!!!");
