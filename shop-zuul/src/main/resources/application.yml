@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: shop-zuul
+
+server:
+  port: 80
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    api-regist:
+      path: /shop/**
+      serviceId: shop-regist-service
+

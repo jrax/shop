@@ -13,17 +13,19 @@
         <module name="shop-regist-service" />
         <module name="shop-regist-web" />
         <module name="shop-server" />
+        <module name="shop-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="shop-basic" target="1.5" />
       <module name="shop-common" target="1.5" />
-      <module name="shop-dependencies" target="1.5" />
+      <module name="shop-dependencies" target="1.8" />
       <module name="shop-entity" target="1.5" />
       <module name="shop-mapper" target="1.5" />
       <module name="shop-regist-service" target="1.8" />
       <module name="shop-regist-web" target="1.8" />
       <module name="shop-server" target="1.8" />
+      <module name="shop-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

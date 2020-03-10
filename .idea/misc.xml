@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/shop-server/pom.xml" />
         <option value="$PROJECT_DIR$/shop-regist-service/pom.xml" />
         <option value="$PROJECT_DIR$/shop-regist-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-zuul/pom.xml" />
       </list>
     </option>
   </component>
