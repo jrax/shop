@@ -161,4 +161,18 @@
       isdelete = #{isdelete,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select
+        *
+        from t_goods_info
+    </select>
+    <select id="selectByIds" parameterType="list"  resultMap="BaseResultMap">
+        select
+        *
+        from t_goods_info
+        WHERE id IN
+        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
 </mapper>

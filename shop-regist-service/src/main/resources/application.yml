@@ -7,6 +7,19 @@ spring:
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+      host: 192.168.136.132
+      port: 6379
+      password: password
+      jedis:
+        pool:
+          max-active: 20
+
+  mail:
+      host: smtp.163.com
+      username: aspio8888@163.com
+      password: aspio1020
+      default-encoding: utf-8
 
 server:
   port: 7761
@@ -22,3 +35,8 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
   mapper-locations: classpath:mapper/*.xml
+
+activeServerUrl: http://localhost:9761/email/active/account?uuid=
+
+
+

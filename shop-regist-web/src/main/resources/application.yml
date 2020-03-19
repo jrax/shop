@@ -1,6 +1,13 @@
 spring:
   application:
     name: shop-regist-web
+  redis:
+    host: 192.168.136.132
+    port: 6379
+    password: password
+    jedis:
+      pool:
+        max-active: 20
 server:
   port: 9761
 
@@ -10,4 +17,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 feign:
   hystrix:
-    enabled: true
+    enabled: false
+
+
+ribbon:
+  ReadTimeout: 400000
+  ConnectTimeout: 400000

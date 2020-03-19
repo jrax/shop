@@ -7,23 +7,43 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shop-basic" />
+        <module name="shop-cart-service" />
+        <module name="shop-cart-web" />
         <module name="shop-dependencies" />
         <module name="shop-entity" />
+        <module name="shop-index-service" />
+        <module name="shop-index-web" />
+        <module name="shop-login-service" />
+        <module name="shop-login-web" />
         <module name="shop-mapper" />
+        <module name="shop-pay-service" />
+        <module name="shop-pay-web" />
         <module name="shop-regist-service" />
         <module name="shop-regist-web" />
+        <module name="shop-search-service" />
+        <module name="shop-search-web" />
         <module name="shop-server" />
         <module name="shop-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="shop-basic" target="1.5" />
+      <module name="shop-cart-service" target="1.8" />
+      <module name="shop-cart-web" target="1.8" />
       <module name="shop-common" target="1.5" />
       <module name="shop-dependencies" target="1.8" />
       <module name="shop-entity" target="1.5" />
+      <module name="shop-index-service" target="1.8" />
+      <module name="shop-index-web" target="1.8" />
+      <module name="shop-login-service" target="1.8" />
+      <module name="shop-login-web" target="1.8" />
       <module name="shop-mapper" target="1.5" />
+      <module name="shop-pay-service" target="1.8" />
+      <module name="shop-pay-web" target="1.8" />
       <module name="shop-regist-service" target="1.8" />
       <module name="shop-regist-web" target="1.8" />
+      <module name="shop-search-service" target="1.8" />
+      <module name="shop-search-web" target="1.8" />
       <module name="shop-server" target="1.8" />
       <module name="shop-zuul" target="1.8" />
     </bytecodeTargetLevel>

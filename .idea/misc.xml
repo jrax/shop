@@ -9,6 +9,16 @@
         <option value="$PROJECT_DIR$/shop-regist-service/pom.xml" />
         <option value="$PROJECT_DIR$/shop-regist-web/pom.xml" />
         <option value="$PROJECT_DIR$/shop-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-login-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-login-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-index-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-index-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-search-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-cart-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-cart-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-pay-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-pay-web/pom.xml" />
       </list>
     </option>
   </component>

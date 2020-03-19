@@ -104,7 +104,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.qf.entity.TUser">
+  <update id="updateByPrimaryKey"  parameterType="com.qf.entity.TUser">
     update t_user
     set name = #{name,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
@@ -114,4 +114,17 @@
       is_admin = #{isAdmin,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+    <select id="selectByEmail" parameterType="string" resultMap="BaseResultMap">
+        select
+        *
+        from t_user
+        where email = #{email}
+    </select>
+
+    <select id="selectforLogin" parameterType="map" resultMap="BaseResultMap">
+        select
+        *
+        from t_user
+        where email = #{uname} OR phone = #{uname} OR name = #{uname} AND password = #{password}
+    </select>
 </mapper>

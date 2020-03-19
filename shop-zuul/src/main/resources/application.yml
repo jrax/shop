@@ -13,6 +13,30 @@ eureka:
 zuul:
   routes:
     api-regist:
-      path: /shop/**
-      serviceId: shop-regist-service
+      path: /regist/**
+      serviceId: shop-regist-web
+    api-login:
+      path: /login/**
+      serviceId: shop-login-web
+    api-index:
+      path: /index/**
+      serviceId: shop-index-web
+    api-search:
+      path: /search/**
+      serviceId: shop-search-web
+    api-cart:
+          path: /cart/**
+          serviceId: shop-cart-web
+    api-pay:
+      path: /pay/**
+      serviceId: shop-pay-web
 
+  host:
+    socket-timeout-millis: 500000
+    connect-timeout-millis: 500000
+  sensitive-headers:
+
+
+ribbon:
+  ReadTimeout: 400000
+  ConnectTimeout: 400000

@@ -2,6 +2,8 @@ package com.qf.mapper;
 
 import com.qf.entity.TGoodsInfo;
 
+import java.util.List;
+
 public interface TGoodsInfoMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,8 @@ public interface TGoodsInfoMapper {
     int updateByPrimaryKeySelective(TGoodsInfo record);
 
     int updateByPrimaryKey(TGoodsInfo record);
+
+    List<TGoodsInfo> selectAll();
+
+    List<TGoodsInfo> selectByIds(List<Integer> ids);
 }
